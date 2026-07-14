@@ -2,6 +2,7 @@ import my_utils
 import calculator
 import random  
 import Patterns 
+import datetime as dt
 
 print(my_utils.greet("World"))
 print("Sum:", my_utils.add(5, 3))
@@ -22,3 +23,4 @@ print("Print triangle")
 patterns = Patterns
 
 patterns.print_rectangle(5, 8)  
+print(f"Current datetime: {dt.datetime.now()}")
