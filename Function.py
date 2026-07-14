@@ -50,7 +50,18 @@ def sum_numbers(*args):
 print("Sum:", sum_numbers(1, 2, 3, 4, 5))
 
 #Multiple keyword arguments
+
 def print_info(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
-print_info(name="John", age=25, city="New York")        
+print_info(name="John", age=25, city="New York") 
+
+def interview_eligibility(age, experience):
+    if age >= 18 and experience >= 2:
+        return "Eligible for interview"
+    elif age < 18:
+        return "Not eligible for interview"
+    elif experience < 2:       
+        return "Not eligible for interview"
+    
+    interview_eligibility(20, 3)  # Output: "Eligible for interview"  
