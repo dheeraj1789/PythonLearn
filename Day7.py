@@ -41,3 +41,9 @@ uppercase_fruits = [fruit.upper() for fruit in fruits]
 print("Uppercase Fruits:", uppercase_fruits)  # Output: ['APPLE', 'BANANA', 'CHERRY', 'DATE', 'ELDERBERRY']         
 
 
+#tuple is an ordered collection of items which can be of any type.
+#Tuples are immutable, meaning their elements cannot be changed after creation.
+#Tuples are defined using parentheses ().
+my_tuple = (1, 2, 3, 4, 5)
+print("First Element:", my_tuple[0])  # Output: 1
+print("Last Element:", my_tuple[-1])  # Output: 5   
