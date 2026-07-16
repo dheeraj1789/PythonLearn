@@ -46,4 +46,41 @@ print("Uppercase Fruits:", uppercase_fruits)  # Output: ['APPLE', 'BANANA', 'CHE
 #Tuples are defined using parentheses ().
 my_tuple = (1, 2, 3, 4, 5)
 print("First Element:", my_tuple[0])  # Output: 1
-print("Last Element:", my_tuple[-1])  # Output: 5   
+print("Last Element:", my_tuple[-1])  # Output: 5
+#listslicing
+
+nums=[10, 20, 30, 40, 50]
+print("Sliced List:", nums[1:4])  # Output: [20, 30, 40]        
+print("Sliced List with step:", nums[::2])  # Output: [10, 30, 50] 
+print("Sliced List with negative step:", nums[::-1])  # Output: [50, 40, 30, 20, 10]    
+#List Comprehension
+squared_numbers = [x**2 for x in range(1, 6)]
+print("Squared Numbers:", squared_numbers)  # Output: [1, 4,  
+even_numbers = [x for x in range(1, 11) if x % 2 == 0]
+print("Even Numbers:", even_numbers)  # Output: [2, 4, 6, 8, 10]  
+
+#Remove duplicates from a list
+
+def remove_duplicates(input_list):
+    unique_list = []
+    for item in input_list:
+        if item not in unique_list:
+            unique_list.append(item)
+    return unique_list
+
+list_with_duplicates = [1, 2, 3, 2, 4, 1, 5]
+list_without_duplicates = remove_duplicates(list_with_duplicates)
+print("List without duplicates:", list_without_duplicates)  # Output: [1, 2, 3, 4, 5]
+
+squared_numbers = [x**2 for x in range(1, 6)]
+print("Squared Numbers:", squared_numbers)  # Output: [1, 4,
+
+list = []
+for i in range(1, 6):
+    list.append(int(input(f"Enter number {i}: ")))
+print("List of numbers:", list)
+print("Sorted list:", list.sort())  # Output: List of numbers: [user input]
+tuple=tuple(list)
+print("Tuple of numbers:", tuple)  # Output: Tuple of numbers: (user input) 
+print("First Element of tuple:", tuple[0]) 
+ # Output: Sorted list: [user input]
